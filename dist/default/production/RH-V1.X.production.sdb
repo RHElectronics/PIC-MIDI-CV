@@ -1,0 +1,295 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15323 ]
+[d frameptr 6 ]
+"10 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"67 Z:\Richard\Electronics\RH Synths\RH-V1\RH-V1.X\rhv1.c
+[v _main main `(v  1 e 1 0 ]
+"124
+[v _ISR ISR `II(v  1 e 1 0 ]
+"161
+[v _DACWrite DACWrite `(v  1 e 1 0 ]
+[v i1_DACWrite DACWrite `(v  1 e 1 0 ]
+"186
+[v _DAC8Write DAC8Write `(v  1 e 1 0 ]
+"208
+[v _handleMIDI handleMIDI `(v  1 e 1 0 ]
+"275
+[v _NoteOff NoteOff `(v  1 e 1 0 ]
+"547 C:\Program Files\Microchip\xc8\v2.30\pic\include\proc\pic16f15323.h
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"592
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"687
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"1078
+[v _RCREG RCREG `VEuc  1 e 1 @281 ]
+"1181
+[v _SP1BRG SP1BRG `VEus  1 e 2 @283 ]
+"1312
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+"1492
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S36 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"1706
+[u S45 . 1 `S36 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES45  1 e 1 @287 ]
+"1918
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
+[s S84 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2237
+[s S93 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S98 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S103 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S108 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S113 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S119 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S128 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S134 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 I2C_START1 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S140 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ1 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS1 1 0 :1:5 
+]
+[s S146 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A1 1 0 :1:5 
+]
+[s S151 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA1 1 0 :1:5 
+]
+[s S156 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT1 1 0 :1:5 
+]
+[s S161 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S166 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS1 1 0 :1:5 
+]
+[u S171 . 1 `S84 1 . 1 0 `S93 1 . 1 0 `S98 1 . 1 0 `S103 1 . 1 0 `S108 1 . 1 0 `S113 1 . 1 0 `S119 1 . 1 0 `S128 1 . 1 0 `S134 1 . 1 0 `S140 1 . 1 0 `S146 1 . 1 0 `S151 1 . 1 0 `S156 1 . 1 0 `S161 1 . 1 0 `S166 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES171  1 e 1 @399 ]
+"2492
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
+"9631
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"9961
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"16055
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @7878 ]
+"16171
+[v _RX1DTPPS RX1DTPPS `VEuc  1 e 1 @7883 ]
+"16463
+[v _RA4PPS RA4PPS `VEuc  1 e 1 @7956 ]
+"16727
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @7972 ]
+"16771
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @7973 ]
+"16815
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"16860
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"17200
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"18524
+[v _CKE CKE `VEb  1 e 0 @3198 ]
+"18530
+[v _CKP CKP `VEb  1 e 0 @3204 ]
+"19025
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"20609
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"20867
+[v _RA0 RA0 `VEb  1 e 0 @96 ]
+"20975
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"20993
+[v _RC1 RC1 `VEb  1 e 0 @113 ]
+"20996
+[v _RC1IE RC1IE `VEb  1 e 0 @14541 ]
+"20999
+[v _RC1IF RC1IF `VEb  1 e 0 @14461 ]
+"21017
+[v _RC2 RC2 `VEb  1 e 0 @114 ]
+"21035
+[v _RC3 RC3 `VEb  1 e 0 @115 ]
+"22 Z:\Richard\Electronics\RH Synths\RH-V1\RH-V1.X\rhv1.c
+[v _midiByte midiByte `uc  1 e 1 0 ]
+"23
+[v _runningStatus runningStatus `uc  1 e 1 0 ]
+"24
+[v _thirdByte thirdByte `uc  1 e 1 0 ]
+"25
+[v _midi_a midi_a `uc  1 e 1 0 ]
+"26
+[v _midi_b midi_b `uc  1 e 1 0 ]
+"27
+[v _status status `uc  1 e 1 0 ]
+"28
+[v _channel channel `uc  1 e 1 0 ]
+"29
+[v _triggerNote triggerNote `uc  1 e 1 0 ]
+"30
+[v _lastNote lastNote `uc  1 e 1 0 ]
+"33
+[v _trigcount trigcount `uc  1 e 1 0 ]
+"35
+[v _trigenab trigenab `uc  1 e 1 0 ]
+"36
+[v _envtrig envtrig `uc  1 e 1 0 ]
+"39
+[v _modLvl modLvl `uc  1 e 1 0 ]
+"45
+[v _lastBend lastBend `uc  1 e 1 0 ]
+"46
+[v _bendLvl bendLvl `ui  1 e 2 0 ]
+"47
+[v _tempBend tempBend `ui  1 e 2 0 ]
+"50
+[v _LowestNote LowestNote `uc  1 e 1 0 ]
+"51
+[v _HighestNote HighestNote `uc  1 e 1 0 ]
+"52
+[v _midiCh midiCh `uc  1 e 1 0 ]
+"55
+[v _VCODAC VCODAC `DC[61]ui  1 e 122 0 ]
+"67
+[v _main main `(v  1 e 1 0 ]
+{
+"122
+} 0
+"161
+[v _DACWrite DACWrite `(v  1 e 1 0 ]
+{
+[v DACWrite@dac dac `uc  1 a 1 wreg ]
+"163
+[v DACWrite@dacMSB dacMSB `uc  1 a 1 5 ]
+"164
+[v DACWrite@dacLSB dacLSB `uc  1 a 1 4 ]
+"161
+[v DACWrite@dac dac `uc  1 a 1 wreg ]
+[v DACWrite@data data `ui  1 p 2 0 ]
+"164
+[v DACWrite@dac dac `uc  1 a 1 3 ]
+"181
+} 0
+"124
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"156
+} 0
+"208
+[v _handleMIDI handleMIDI `(v  1 e 1 0 ]
+{
+[v handleMIDI@midiByte midiByte `uc  1 a 1 wreg ]
+[v handleMIDI@midiByte midiByte `uc  1 a 1 wreg ]
+[v handleMIDI@midi_a midi_a `uc  1 p 1 6 ]
+[v handleMIDI@midi_b midi_b `uc  1 p 1 7 ]
+"210
+[v handleMIDI@midiByte midiByte `uc  1 a 1 10 ]
+"273
+} 0
+"161
+[v i1_DACWrite DACWrite `(v  1 e 1 0 ]
+{
+[v i1DACWrite@dac dac `uc  1 a 1 wreg ]
+"163
+[v i1DACWrite@dacMSB dacMSB `uc  1 a 1 5 ]
+"164
+[v i1DACWrite@dacLSB dacLSB `uc  1 a 1 4 ]
+"161
+[v i1DACWrite@dac dac `uc  1 a 1 wreg ]
+[v i1DACWrite@data data `ui  1 p 2 0 ]
+"164
+[v i1DACWrite@dac dac `uc  1 a 1 3 ]
+"181
+} 0
+"275
+[v _NoteOff NoteOff `(v  1 e 1 0 ]
+{
+"283
+} 0
+"186
+[v _DAC8Write DAC8Write `(v  1 e 1 0 ]
+{
+[v DAC8Write@dac dac `uc  1 a 1 wreg ]
+"188
+[v DAC8Write@dacMSB dacMSB `uc  1 a 1 5 ]
+"189
+[v DAC8Write@dacLSB dacLSB `uc  1 a 1 4 ]
+"186
+[v DAC8Write@dac dac `uc  1 a 1 wreg ]
+[v DAC8Write@data data `uc  1 p 1 0 ]
+"189
+[v DAC8Write@dac dac `uc  1 a 1 3 ]
+"206
+} 0
